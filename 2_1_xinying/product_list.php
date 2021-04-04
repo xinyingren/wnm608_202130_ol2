@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Product List</title>
 
-	<?php include "pats/meta.php"; ?>
+	<?php include "parts/meta.php"; ?>
 </head>
 <body>
 
-	<?php include "pats/navbar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
 		<div class="card soft">
