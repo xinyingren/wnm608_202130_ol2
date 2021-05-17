@@ -4,5 +4,11 @@
 		"type":"Student",
 		"email":"xinying528@hotmail.com",
 		"classes":[608,617,820]
+	},
+	{
+		"name":"Qian Liu",
+		"type":"Student",
+		"email":"xinying528@hotmail.com",
+		"classes":[608,617,820]
 	}
 ]
