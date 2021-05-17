@@ -26,7 +26,7 @@
 				<ul class="container display-flex">
 					<li ><a href="#articlel">HOME</a></li>
 					<li ><a href="product_list.php">MENU</a></li>
-					<li ><a href="#articlel">OUR STORY</a></li>
+					<li ><a href="product_cart.php">CART</a></li>
 					<li ><a href="#articlel">CONTACT US</a></li>
 				</ul>
 			</nav>

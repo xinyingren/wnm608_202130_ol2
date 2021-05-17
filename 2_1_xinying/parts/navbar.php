@@ -10,7 +10,7 @@
 					<!-- li*3>a[href=#]>{Link $} -->
 					<li><a href="index.php">HOME</a></li>
 					<li><a href="product_list.php">MENU</a></li>
-					<li><a href="#">OUR STORY</a></li>
+					<li><a href="product_cart.php">CART</a></li>
 					<li><a href="#">CONTACT US</a></li>
 				</ul>
 			</nav>
