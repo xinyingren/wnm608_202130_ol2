@@ -11,15 +11,14 @@
 	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
-		<div class="card soft">
-			<h2>Product List</h2>
+		<h2>Product List</h2>
 
-			<?php
+		<?php
 
-			include_once "lib/php/functions.php";
-			include_once "parts/templates.php";
+		include_once "lib/php/functions.php";
+		include_once "parts/templates.php";
 
-			$result = makeQuery(
+		$result = makeQuery(
 				makeConn(),
 				"
 				SELECT * 
@@ -27,12 +26,11 @@
 				ORDER BY `price` DESC
 				LIMIT 6
 				"
-			);
+		);
 
-			echo "<div class='grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
+		echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
 
-			?>
-		</div>
+		?>
 	</div>
 
 </body>

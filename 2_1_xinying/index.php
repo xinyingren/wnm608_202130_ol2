@@ -34,37 +34,6 @@
 	</header>
 
 
-	
-
-	
-
-	<div class="container">
-		<div class="grid gap xs-small md-medium">
-			<!-- .col-xs-6.col-md-3*4>.card>{card} -->
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src="https://via.placeholder.com/500" alt="" class="media-image">
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src="https://via.placeholder.com/500" alt="" class="media-image">
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src="https://via.placeholder.com/500" alt="" class="media-image">
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src="https://via.placeholder.com/500" alt="" class="media-image">
-				</div>
-			</div>
-		</div>
-		
-	</div>
-
 
 	<div class="container">
 		<article id="article1" class="article card soft">
