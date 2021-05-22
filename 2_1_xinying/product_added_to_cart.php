@@ -4,7 +4,7 @@ include_once "lib/php/functions.php";
 
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
-
+$cart_product = cartItemById($_GET['id']);
 
 ?>
 <!DOCTYPE html>
@@ -22,6 +22,7 @@ $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id
 	<div class="container">
 		<div class="card soft">
 			<h2>You added <?= $product->name ?> to your cart</h2>
+			<p>There are now <?= $cart_product->amount ?> of <?= $product->name ?> in your cart</p>
 			
 			<div class="display-flex">
 				<div class="flex-none"><a href="product_list.php">Continue Shopping</a></div>
