@@ -5,7 +5,10 @@ include_once "lib/php/functions.php";
 ?>
 
 <header class="navbar">
-		<div class="container display-flex">
+		<div class="container display-flex" id="navbar-style">
+			<div>
+				<img id="logo" src="img/peppercorn_logo.png" />
+			</div>
 			<div class="flex-none">
 				<h1>Peppercron Kitchen</h1>
 			</div>

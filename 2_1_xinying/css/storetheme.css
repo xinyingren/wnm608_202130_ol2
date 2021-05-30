@@ -150,6 +150,8 @@ span.badge:not(:empty)::before {
 }
 
 
-
-
+.logo {
+	max-width:100%;
+	max-height:100%;
+}
 
