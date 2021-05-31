@@ -1,4 +1,5 @@
-<?php include_once "lib/php/functions.php"; ?><!DOCTYPE html>
+<?php 
+include_once "lib/php/functions.php"; ?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -44,7 +45,7 @@
 		<article id="article1" class="article card soft">
 			<h2>Specialties</h2>
 			<div class="article-body">
-				<p>Peppercorn Kitchen is a fast casual restaurant serving mouth-watering Sichuan flavors with fresh ingredients and family recipes.
+				<p>Peppercorn Kitchen is a fast casual restaurant serving mouth-watering Sichuan flavors with fresh ingredients and family recipes.</p>
 			</div>
 		</article>
 	
@@ -52,7 +53,7 @@
 		<article id="article2" class="article card soft">
 			<h2>History</h2>
 			<div class="article-body">
-				<p>Established in 2018. Sichuan Peppercorn is a commonly used spice in Chinese cuisine, especially Sichuan cuisine. It is the source of tingling/numbing effect on your tongue after tasting Mapo Tofu or Boiling Fish. We named ourselves Peppercorn Kitchen due to our crazy obsession with the spice; we want you to be addicted to this magical spice after tasting our food just as much as we are. In Peppercorn Kitchen, we never compromise the flavors that are so close to our hearts. "Because we never forget where we come from."
+				<p>Established in 2018. Sichuan Peppercorn is a commonly used spice in Chinese cuisine, especially Sichuan cuisine. It is the source of tingling/numbing effect on your tongue after tasting Mapo Tofu or Boiling Fish. We named ourselves Peppercorn Kitchen due to our crazy obsession with the spice; we want you to be addicted to this magical spice after tasting our food just as much as we are. In Peppercorn Kitchen, we never compromise the flavors that are so close to our hearts. "Because we never forget where we come from."</p>
 			</div>
 		</article>
 
@@ -97,11 +98,14 @@
 				<p>289 Mercer St
 				New York, NY 10003
 				b/t Waverly Pl & 8th St
-				Greenwich Village
+				Greenwich Village</p>
 			</div>
 		</article>
 	</div>
+
+
 </body>
+</html>
 
 
 
