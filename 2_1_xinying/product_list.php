@@ -10,7 +10,7 @@ include_once "parts/templates.php";
 	<meta charset="UTF-8">
 	<title>Product List</title>
 
-	<?php include "parts/meta.php"; ?>
+<?php include "parts/meta.php"; ?>
 
 	<script src="lib/js/functions.js"></script>
 	<script src="js/templates.js"></script>

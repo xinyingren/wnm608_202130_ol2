@@ -1,6 +1,7 @@
 <?php
 
 include "../lib/php/functions.php";
+include "parts/templates.php";
 
 $empty_product = (object)[
 	"name"=>"sichuan fries",
@@ -18,6 +19,7 @@ $empty_product = (object)[
 
 
 // LOGIC
+if(isset($_GET['id'])) {
 try {
 	$conn = makePDOConn();
 	switch($_GET['action']) {
@@ -80,7 +82,7 @@ try {
 } catch(PDOException $e) {
 	die($e->getMessage());
 }
-
+}
 
 
 
@@ -91,7 +93,7 @@ function productListItem($r,$o) {
 return $r.<<<HTML
 <div class="card soft">
 	<div class="display-flex">
-		<div class="flex-none images-thumbs"><img src='/img/$o->thumbnail'></div>
+		<div class="flex-none images-thumbs"><img src='img/$o->thumbnail'></div>
 		<div class="flex-stretch" style="padding:1em">$o->name</div>
 		<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></div>
 	</div>
@@ -107,7 +109,7 @@ function showProductPage($o) {
 $id = $_GET['id'];
 $addoredit = $id == "new" ? "Add" : "Edit";
 $createorupdate = $id == "new" ? "create" : "update";
-$images = array_reduce(explode(",", $o->images),function($r,$o){return $r."<img src='/img/$o'>";});
+$images = array_reduce(explode(",", $o->images),function($r,$o){return $r."<img src='img/$o'>";});
 
 // heredoc
 $display = <<<HTML
@@ -127,7 +129,7 @@ $display = <<<HTML
 	</div>
 	<div class="form-control">
 		<label class="form-label">Thumbnail</label>
-		<span class="images-thumbs"><img src='/img/$o->thumbnail'></span>
+		<span class="images-thumbs"><img src='img/$o->thumbnail'></span>
 	</div>
 	<div class="form-control">
 		<label class="form-label">Other Images</label>
@@ -172,14 +174,14 @@ HTML;
 
 $output = $id == "new" ? "<div class='card soft'>$form</div>" :
 	"<div class='grid gap'>
-		<div class='col-xs-12 col-md-7'><div class='card soft'>$dispaly</div></div>
+		<div class='col-xs-12 col-md-7'><div class='card soft'>$display</div></div>
 		<div class='col-xs-12 col-md-5'><div class='card soft'>$form</div></div>
 	</div>
 	";
 
 $delete = $id == "new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";
 
-echo <<<HTML 
+echo <<<HTML
 <div class="card soft">	
 	<nav class="display-flex">
 		<div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">Back</a></div>

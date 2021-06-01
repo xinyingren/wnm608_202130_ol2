@@ -82,7 +82,7 @@ return <<<HTML
 	<a href="product_checkout.php" class="form-button">Checkout</a>
 </div>
 HTML;
-
+}
 
 
 
